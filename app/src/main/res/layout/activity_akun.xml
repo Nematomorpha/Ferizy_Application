@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aktifAct"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_blue">
+
+        <TextView
+            android:id="@+id/Tiket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiket"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/aktif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktif"
+            android:textColor="@color/white"
+            android:layout_below="@id/Tiket"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"/>
+
+
+        <TextView
+            android:id="@+id/menunggu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="menunggu"
+            android:textColor="@color/white"
+            android:layout_below="@id/Tiket"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/aktif"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:id="@+id/Refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refund"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_below="@id/Tiket"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"/>
+
+
+
+        <TextView
+            android:id="@+id/Gagal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gagal"
+            android:textColor="@color/white"
+            android:layout_below="@id/Tiket"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@id/Refund"
+            android:layout_marginRight="40dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/gb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gb_1"
+        android:layout_below="@id/navbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada aktivasi pembatalan"
+        android:layout_below="@id/gb_1"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/txt_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ditemukan"
+        android:layout_below="@id/txt_1"
+
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_3"
+        android:text="semua transaksi yang akan muncul disini"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_white"
+        android:layout_below="@id/txt_3"
+        android:layout_marginTop="135dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/home" />
+
+        <TextView
+            android:id="@+id/beranda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home"
+            android:layout_marginLeft="32dp"
+            android:text="Beranda"
+            />
+
+        <ImageView
+            android:id="@+id/pt_pes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/coupon"
+            app:tint="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:id="@+id/Saya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pt_pes"
+            android:layout_centerHorizontal="true"
+            android:text="Pesanan Saya"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+
+        <ImageView
+            android:id="@+id/people"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/orang"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="55dp"
+            />
+
+        <TextView
+            android:id="@+id/akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:text="Akun"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

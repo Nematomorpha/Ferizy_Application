@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AkunActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hai, Solih Hidayat"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/tandaK"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/left" />
+
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_1"
+            android:layout_centerHorizontal="true"
+            android:text="solihhidayatt123@gmail.com"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:id="@+id/ktk_1"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/text_2"
+        android:background="@drawable/rounded_shadow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/search"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cek Pemesanan"
+            android:layout_below="@id/search"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ktk_2"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/text_2"
+        android:background="@drawable/rounded_shadow"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/user"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil"
+            android:layout_below="@id/user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ktk_3"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/ktk_2"
+        android:background="@drawable/rounded_shadow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/telphone"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/telephone"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hubungi Kami"
+            android:layout_below="@id/telphone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/ktk_4"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/ktk_2"
+        android:background="@drawable/rounded_shadow"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/riwayat"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/history"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Riwayat Pemesanan"
+            android:layout_below="@id/riwayat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ktk_5"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/ktk_3"
+        android:background="@drawable/rounded_shadow"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/keluar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/logout"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keluar"
+            android:layout_below="@id/keluar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_white"
+        android:layout_below="@id/ktk_5"
+        android:layout_marginTop="130dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/home" />
+
+        <TextView
+            android:id="@+id/beranda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home"
+            android:layout_marginLeft="32dp"
+            android:text="Beranda"
+            />
+
+        <ImageView
+            android:id="@+id/pt_pes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/coupon"
+             />
+
+        <TextView
+            android:id="@+id/Saya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pt_pes"
+            android:layout_centerHorizontal="true"
+            android:text="Pesanan Saya"
+           />
+
+
+        <ImageView
+            android:id="@+id/people"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/orang"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="55dp"
+            app:tint="@android:color/holo_blue_dark"
+            />
+
+        <TextView
+            android:id="@+id/akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:text="Akun"
+            android:textColor="@android:color/holo_blue_dark"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

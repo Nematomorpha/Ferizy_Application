@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_white">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ferizy"/>
+    </RelativeLayout>
+
+         <ImageView
+             android:id="@+id/crs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/crs"
+             android:layout_below="@id/logo"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="5dp"/>
+
+         <ImageView
+             android:id="@+id/titik"
+             android:layout_width="10dp"
+             android:layout_height="10dp"
+             android:src="@drawable/rounded_titik"
+             android:layout_below="@id/crs"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titik"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_white"
+        android:padding="11dp">
+
+
+        <TextView
+            android:id="@+id/txt_Cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:text="Cari Tiket Anda"
+            android:textColor="#252424"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_Atur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txt_Cari"
+            android:text="Atur Jadwal Kedatangan Anda di Pelabuhan"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_Asal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txt_Atur"
+            android:textColor="#252424"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:text="Pelabuhan Asal"/>
+
+        <TextView
+            android:id="@+id/txt_Tujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt_Atur"
+            android:textColor="#252424"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:text="Pelabuhan Tujuan"/>
+
+        <ImageView
+            android:id="@+id/ship1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ship"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txt_Tujuan"/>
+
+        <TextView
+            android:id="@+id/pilih1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pilih asal"
+            android:layout_toRightOf="@id/ship1"
+            android:layout_below="@id/txt_Tujuan"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <View
+            android:id="@+id/vw_1"
+            android:layout_width="120dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ship1"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_marginTop="5dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/panah"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/txt_Asal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="116dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/panah"
+            />
+
+        <TextView
+            android:id="@+id/pilih2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pilih Tujuan"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt_Tujuan"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/ship2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ship"
+            android:layout_below="@id/txt_Tujuan"
+            android:layout_toRightOf="@id/panah"
+            android:layout_marginLeft="30dp"
+            />
+
+
+
+        <View
+            android:id="@+id/vw_2"
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ship2"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txt_Layanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/vw_1"
+            android:textColor="#252424"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:text="Kelas Layanan"/>
+
+        <TextView
+            android:id="@+id/txt_Jasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/vw_2"
+            android:textColor="#252424"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:text="Jenis Pengguna Jasa"/>
+
+        <ImageView
+            android:id="@+id/cls_lynn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cls"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txt_Layanan"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/pilih3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Kelas Layanan"
+            android:layout_toRightOf="@id/cls_lynn"
+            android:layout_below="@id/txt_Layanan"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/cls_jasa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/driver"
+           android:layout_toRightOf="@id/pilih3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/txt_Layanan"/>
+
+        <TextView
+            android:id="@+id/berkendara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berkedara?"
+            android:layout_toRightOf="@id/cls_jasa"
+            android:layout_below="@id/txt_Layanan"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+
+        <View
+            android:id="@+id/vw_3"
+            android:layout_width="155dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/cls_lynn"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_marginTop="5dp"/>
+
+        <View
+            android:id="@+id/vw_4"
+            android:layout_width="155dp"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/cls_lynn"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/txt_checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/vw_4"
+            android:layout_marginTop="15dp"
+            android:text="Jadwal Masuk Pelabuhan (Check In)"
+            android:textColor="#252424"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/calender"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/calendar"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txt_checkin"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/pilih4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Tanggal"
+            android:layout_toRightOf="@id/calender"
+            android:layout_below="@id/txt_checkin"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/pilih5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih Jam "
+            android:layout_below="@id/txt_checkin"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+           />
+
+
+        <View
+            android:id="@+id/vw_5"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txt_checkin"
+            android:layout_toLeftOf="@id/pilih5"
+            android:layout_marginRight="20dp"
+            android:background="@color/black"
+            android:layout_marginTop="5dp"/>
+
+
+        <View
+            android:id="@+id/vw_6"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/pilih5"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_Penumpang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/vw_6"
+            android:layout_marginTop="15dp"
+            android:text="Penumpang"
+            android:textColor="#252424"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/pala"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/man"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/txt_Penumpang"/>
+
+        <TextView
+            android:id="@+id/dewasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_Penumpang"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/pala"
+            android:text="1 Dewasa"
+            android:textColor="#2196F3"
+            android:textStyle="bold" />
+
+
+        <View
+            android:id="@+id/vw_7"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/pala"
+            android:layout_marginTop="5dp"
+            android:background="@color/cardview_shadow_start_color"
+           />
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cari"
+            android:textColor="@color/white"
+            android:layout_below="@id/dewasa"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_orange"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_white"
+        android:layout_below="@id/pesanan"
+        android:layout_marginTop="38dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/home"
+            app:tint="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:id="@+id/beranda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home"
+            android:layout_marginLeft="32dp"
+            android:text="Beranda"
+            android:textColor="@android:color/holo_blue_dark"
+            />
+
+        <ImageView
+            android:id="@+id/pt_pes"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/coupon"
+             />
+
+        <TextView
+            android:id="@+id/Saya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pt_pes"
+            android:layout_centerHorizontal="true"
+            android:text="Pesanan Saya"
+         />
+
+
+        <ImageView
+            android:id="@+id/people"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/orang"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="55dp"
+            />
+
+        <TextView
+            android:id="@+id/akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:text="Akun"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
